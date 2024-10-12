@@ -1,0 +1,42 @@
+[
+  {
+    "train_id": "Sangamitra",
+    "train_no": 12345,
+    "seats": [
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0]
+    ],
+    "station_times": {
+      "Nagpur": "13:50:00",
+      "Itarsi": "13:50:00",
+      "Prayagraj": "13:50:00"
+    },
+    "stations": [
+      "Nagpur",
+      "Itarsi",
+      "Prayagraj"
+    ]
+  },
+  {
+    "train_id": "Secundrabad",
+    "train_no": 67890,
+    "seats": [
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0],
+      [0,0,0,0,0,0]
+    ],
+    "station_times": {
+      "bangalore": "13:50:00",
+      "Nagpur": "13:50:00",
+      "Deen-Dayal-Upadhay": "13:50:00"
+    },
+    "stations": [
+      "bangalore",
+      "Nagpur",
+      "Deen-Dayal-Upadhay"
+    ]
+  }
+]
