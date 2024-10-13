@@ -22,9 +22,22 @@ public class UserBookingService {
     // Constructors
     public UserBookingService(User user) throws IOException {
         this.user = user;
-        File users = new File(USER_PATH);
-        userList = objectMapper.readValue(users, new TypeReference<List<User>>() {});
+
+        loadUserListFromFile();
     }
+
+    private void loadUserListFromFile() throws IOException {
+
+        // deserialization from JS to objects
+        userList = objectMapper.readValue(new File(USER_PATH), new TypeReference<List<User>>() {});
+    }
+
+    private void saveUserListToFile() throws IOException {
+        File usersFile = new File(USER_PATH);
+        objectMapper.writeValue(usersFile, userList);
+    }
+
+
 
 
 
